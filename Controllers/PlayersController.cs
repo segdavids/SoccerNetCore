@@ -23,6 +23,7 @@ namespace SoccerNetCore.Controllers
         }
 
         //Decorator for Odata - For example: players?$filter=contains(name, 'Lionel')
+        //Added by David
         [EnableQuery]
         [HttpGet]
         public ActionResult<IEnumerable<Player>> Get()
